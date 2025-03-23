@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            document
+        </title>
+        <style>
+            button:hover{
+                background-color: chocolate;
+                box-shadow: 50%;
+            }
+        </style>
+    </head>
+    <body id="md">
+        <h1>Hello</h1>
+        <p>Artificial Intelligence (AI) is a machine intelligence that emulates human intelligence. AI learns from data, which is just a
+           fancy word for information, and is used in many things we use every day. AI is capable of learning, planning, thinking, and
+           problem-solving, and is used in many applications such as answering questions on your phone. The most notable aspect of AI is how
+           robots simulate human intellect</p>
+           <button onclick="dark()">Dark Mood</button>
+           <button onclick="light()">Light Mood</button>
+
+
+           <script>
+            function dark(){
+             document.getElementById("md").style.backgroundColor="black";
+             document.getElementById("md").style.color="white";
+            }
+            function light(){
+                document.getElementById("md").style.backgroundColor="white";
+                document.getElementById("md").style.color="black";
+               }
+           </script>
+    </body>
+</html>
