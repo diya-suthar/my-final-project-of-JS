@@ -1,0 +1,47 @@
+!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            docs
+        </title>
+        <style>
+            body{
+                background-color: black;
+                padding-top: 15%;
+            }
+            div{
+                height: 200px;
+                width: 200px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                border-radius: 50%;
+                background-color:white;
+                }
+        </style>
+    </head>
+    <body>
+       
+        <center>
+            <div id="md">
+            <h2 id="x"></h2>
+        </div>
+    <button onclick="on()">Switch On</button>
+    <button onclick="off()">Switch Off</button>
+       </center>
+   
+    <script>
+        function on(){
+            document.getElementById("md").style.backgroundColor="pink";
+            document.getElementById("md").style.boxShadow="0 0 100px pink";
+            document.getElementById("x").innerHTML="someone on me";
+           }
+           function off(){
+               document.getElementById("md").style.backgroundColor="white";
+               document.getElementById("md").style.boxShadow="none";
+               document.getElementById("x").innerHTML="turned off";
+              }
+        </script>
+   
+</body>
+</html>
